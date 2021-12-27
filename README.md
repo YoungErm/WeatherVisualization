@@ -17,9 +17,9 @@
 
 ##  Overview
 
-**天气可视化 **是一个基于`uni-app`构建的微信小程序。该微信小程序为用户提供了实时的天气查询，生活指数和空气质量的可视化，并且对未来2小时内降雨进行了预测。
+**天气可视化** 是一个基于`uni-app`构建的微信小程序。该微信小程序为用户提供了实时的天气查询，生活指数和空气质量的可视化，并且对未来2小时内降雨进行了预测。
 
-注：这是本人大三上学期课程**`数据可视化`**的一个期末项目。由于`VUE`语法、`uni-app`框架、小程序等前端知识都是现学现用，文档和项目中均有很多不完善和不正确的地方，请读者批评指正。
+注：这是本人大三上学期课程**数据可视化**的一个期末项目。由于`VUE`语法、`uni-app`框架、小程序等前端知识都是现学现用，文档和项目中均有很多不完善和不正确的地方，请读者批评指正。
 
 ## Architecture
 
@@ -37,7 +37,7 @@
 
 ## Quick tour
 
-为了快速使用本仓库的代码，推荐**[HBuilderX](https://www.dcloud.io/hbuilderx.html)**:
+为了快速使用本仓库的代码，推荐[HBuilderX](https://www.dcloud.io/hbuilderx.html):
 
 ```bash
 git clone https://github.com/YoungErm/WeatherVisualization
@@ -58,14 +58,12 @@ cd WeatherVisualization  #  通过HBuilder打开
 
 > 封面—>首页（24小时天气预报—2小时降水预报—生活指数—空气指数）—>选择城市
 
-<center class="half">
-    <img src="README/src/微信图片_20211227022908.jpg" alt="微信图片_20211227022908" style="zoom: 30%;" />
-    <img src="README/src/微信图片_20211227022926.jpg" alt="微信图片_20211227022926" style="zoom: 30%;" />
-    <img src="README/src/微信图片_20211227022929.jpg" alt="微信图片_20211227022929" style="zoom: 30%;" />
-    <img src="README/src/微信图片_20211227022943.jpg" alt="微信图片_20211227022943" style="zoom: 30%;" />
-    <img src="README/src/微信图片_20211227022947.jpg" alt="微信图片_20211227022947" style="zoom: 30%;" />
-    <img src="README/src/微信图片_20211227022950.jpg" alt="微信图片_20211227022950" style="zoom: 30%;" />
-</center>
+<img src="README/src/微信图片_20211227022908.jpg" width="425"/><img src="README/src/微信图片_20211227022926.jpg" width="425"/>
+
+<img src="README/src/微信图片_20211227022929.jpg" width="425"/><img src="README/src/微信图片_20211227022943.jpg" width="425"/>
+
+<img src="README/src/微信图片_20211227022947.jpg" width="425"/><img src="README/src/微信图片_20211227022950.jpg" width="425"/>
+
 **天气可视化** 现已上线微信客户端，用户可扫描下面二维码进行体验： 
 
 ![image-20211227154508215](README/src/image-20211227154508215.png)
@@ -78,14 +76,14 @@ cd WeatherVisualization  #  通过HBuilder打开
 - [单文件组件规范 | Vue Loader (vuejs.org)](https://vue-loader.vuejs.org/zh/spec.html#简介)
 - [微信小程序官网文档 ](https://developers.weixin.qq.com/miniprogram/dev/framework/)
 - [ECharts官网文档](https://echarts.apache.org/zh/option.html#title)
-- 天气APP参考项目：https://github.com/liuyao64/weatherForecast
-- 和风API开发文档：https://dev.qweather.com/docs/api/
-- 封面Echarts图 参考网址：https://www.makeapie.com/editor.html?c=xB1-wDluNX
-- 24小时天气预报图 参考网址：https://www.makeapie.com/editor.html?c=xRmuUp8m9b
-- 未来2小时降水预测图 参考网址：https://www.makeapie.com/editor.html?c=xSJJXiE1Wx
-- 生活指数（南丁格尔玫瑰图）参考网址：https://limeui.qcoon.cn/#/echart-example
-- 当前空气质量指数图 参考网址：https://www.makeapie.com/editor.html?c=xrD67xXLT9
-- 小程序图标：https://www.iconfont.cn/collections/detail?spm=a313x.7781069.1998910419.dc64b3430&cid=25190
+- [天气APP参考项目](https://github.com/liuyao64/weatherForecast)
+- [和风API开发文档](https://dev.qweather.com/docs/api/)
+- [封面Echarts图](https://www.makeapie.com/editor.html?c=xB1-wDluNX)
+- [24小时天气预报图](https://www.makeapie.com/editor.html?c=xRmuUp8m9b)
+- [未来2小时降水预测图](https://www.makeapie.com/editor.html?c=xSJJXiE1Wx)
+- [生活指数（南丁格尔玫瑰图）](https://limeui.qcoon.cn/#/echart-example)
+- [当前空气质量指数图](https://www.makeapie.com/editor.html?c=xrD67xXLT9)
+- [小程序图标](https://www.iconfont.cn/collections/detail?spm=a313x.7781069.1998910419.dc64b3430&cid=25190)
 
 ## Appendix
 
@@ -93,24 +91,8 @@ cd WeatherVisualization  #  通过HBuilder打开
 
 首先简单介绍一下uni-app模板的目录结构：
 
-┌── App.vue                      应用配置，用来配置App全局style以及应用的生命周期
-├── main.js                       Vue初始化入口文件
-├── manifest.json            应用的配置文件，用于指定应用的名称、图标、权限等
-├── pages                         小程序页面文件存放的目录
-│   ├── city
-│       └── city.vue             选择城市页面
-│   ├── cover
-│       └── cover.vue          小程序打开时封面页
-│   └── index
-│       └── index.vue          小程序的主页
-├── pages.json                  文件用来对 uni-app 进行全局配置，决定页面文件的路径、style等
-├── static                           存放小程序引用的本地静态资源（如图片、视频等）的目录
-├── uni.scss                       这里是uni-app内置的常用样式变量 
-├── uni_modules              存放uni-app的组件（类似于Python中的Wheel）
-├── wxcomponents           存放wx组件目录（同上）[自定义组件](https://uniapp.dcloud.net.cn/frame?id=%e5%b0%8f%e7%a8%8b%e5%ba%8f%e8%87%aa%e5%ae%9a%e4%b9%89%e7%bb%84%e4%bb%b6%e6%94%af%e6%8c%81)
-└── unpackage                  小程序编译输出目录（可用微信开发者工具打开）
-    └── dist/dev                   小程序开发版    
-    └── dist/build                小程序正式发行版
+![DirectoryStructure ](README/src/trees.png)
+    
 
 首先，我们需要在`mainifest.json`中配置我们[小程序的ID](https://developers.weixin.qq.com/miniprogram/dev/framework/quickstart/getstart.html#%E7%94%B3%E8%AF%B7%E5%B8%90%E5%8F%B7)，本次只针对微信小程序进行开发，除了**AppID**之外还需要额外配置一下位置权限即可：
 
@@ -378,4 +360,3 @@ export default {
 关于**页面的生命周期**，这里引用[微信开放文档 ](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/page-life-cycle.html)中的图进行说明：
 
 ![img](README/src/page-lifecycle.2e646c86.png)
-
