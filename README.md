@@ -58,11 +58,11 @@ cd WeatherVisualization  #  通过HBuilder打开
 
 > 封面—>首页（24小时天气预报—2小时降水预报—生活指数—空气指数）—>选择城市
 
-<img src="README/src/微信图片_20211227022908.jpg" width="425"/><img src="README/src/微信图片_20211227022926.jpg" width="425"/>
+<img src="README/src/微信图片_20211227022908.jpg" width="400"/><img src="README/src/微信图片_20211227022926.jpg" width="400"/>
 
-<img src="README/src/微信图片_20211227022929.jpg" width="425"/><img src="README/src/微信图片_20211227022943.jpg" width="425"/>
+<img src="README/src/微信图片_20211227022929.jpg" width="400"/><img src="README/src/微信图片_20211227022943.jpg" width="400"/>
 
-<img src="README/src/微信图片_20211227022947.jpg" width="425"/><img src="README/src/微信图片_20211227022950.jpg" width="425"/>
+<img src="README/src/微信图片_20211227022947.jpg" width="400"/><img src="README/src/微信图片_20211227022950.jpg" width="400"/>
 
 **天气可视化** 现已上线微信客户端，用户可扫描下面二维码进行体验： 
 
