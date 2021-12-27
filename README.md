@@ -24,7 +24,7 @@
     + [template](#template)
     + [script](#script)
     + [style](#style)
-  * [A.3 Weather forecast for the next 24 hours](#a3-weather-forecast-for-the-next-24-hours)
+  * [A.3 Example: Weather forecast for the next 24 hours](#a3-weather-forecast-for-the-next-24-hours)
   * [A.4 Others instructions](#a4-others-instructions)
     + [Page Lifecycle](#page-lifecycle)
 
