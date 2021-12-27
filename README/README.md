@@ -1,6 +1,6 @@
 <p align="center">
     <br>
-    <img src="./README/src/logo.png" width="450" height="200"/>
+    <img src="./src/logo.png" width="450" height="200"/>
     <br>
 <p>
 <p align="center">
@@ -19,7 +19,7 @@
 
 **天气可视化 **是一个基于`uni-app`构建的微信小程序。该微信小程序为用户提供了实时的天气查询，生活指数和空气质量的可视化，并且对未来2小时内降雨进行了预测。
 
-注：这是本人大三上学期课程**`数据可视化`**的一个期末项目。由于`VUE`语法、`uni-app`框架、小程序等前端知识都是现学现用，文档和项目中均有很多不完善和不正确的地方，请读者批评指正。
+注：这是本人为了完成大三上学期课程**`数据可视化`**一个期末项目，并且`VUE`语法、`uni-app`框架、小程序等前端知识都是现学现用，项目中有很多不完善和不正确的地方，请读者批评指正。
 
 ## Architecture
 
@@ -33,7 +33,7 @@
 > 6. 测试、预览和体验
 > 7. 最后发布上线
 
-![image-20211228030849857](README/src/image-20211228030849857.png)
+![image-20211228030849857](src/image-20211228030849857.png)
 
 ## Quick tour
 
@@ -50,7 +50,7 @@ cd WeatherVisualization  #  通过HBuilder打开
 
 点击运行—运行到小程序模拟器—[微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html)
 
-![image-20211228020641514](README/src/image-20211228020641514.png)
+![image-20211228020641514](src/image-20211228020641514.png)
 
 ## Online demos
 
@@ -59,16 +59,16 @@ cd WeatherVisualization  #  通过HBuilder打开
 > 封面—>首页（24小时天气预报—2小时降水预报—生活指数—空气指数）—>选择城市
 
 <center class="half">
-    <img src="README/src/微信图片_20211227022908.jpg" alt="微信图片_20211227022908" style="zoom: 30%;" />
-    <img src="README/src/微信图片_20211227022926.jpg" alt="微信图片_20211227022926" style="zoom: 30%;" />
-    <img src="README/src/微信图片_20211227022929.jpg" alt="微信图片_20211227022929" style="zoom: 30%;" />
-    <img src="README/src/微信图片_20211227022943.jpg" alt="微信图片_20211227022943" style="zoom: 30%;" />
-    <img src="README/src/微信图片_20211227022947.jpg" alt="微信图片_20211227022947" style="zoom: 30%;" />
-    <img src="README/src/微信图片_20211227022950.jpg" alt="微信图片_20211227022950" style="zoom: 30%;" />
+    <img src="src/微信图片_20211227022908.jpg" alt="微信图片_20211227022908" style="zoom: 30%;" />
+    <img src="src/微信图片_20211227022926.jpg" alt="微信图片_20211227022926" style="zoom: 30%;" />
+    <img src="src/微信图片_20211227022929.jpg" alt="微信图片_20211227022929" style="zoom: 30%;" />
+    <img src="src/微信图片_20211227022943.jpg" alt="微信图片_20211227022943" style="zoom: 30%;" />
+    <img src="src/微信图片_20211227022947.jpg" alt="微信图片_20211227022947" style="zoom: 30%;" />
+    <img src="src/微信图片_20211227022950.jpg" alt="微信图片_20211227022950" style="zoom: 30%;" />
 </center>
 **天气可视化** 现已上线微信客户端，用户可扫描下面二维码进行体验： 
 
-![image-20211227154508215](README/src/image-20211227154508215.png)
+![image-20211227154508215](src/image-20211227154508215.png)
 
 ## References
 
@@ -114,7 +114,7 @@ cd WeatherVisualization  #  通过HBuilder打开
 
 首先，我们需要在`mainifest.json`中配置我们[小程序的ID](https://developers.weixin.qq.com/miniprogram/dev/framework/quickstart/getstart.html#%E7%94%B3%E8%AF%B7%E5%B8%90%E5%8F%B7)，本次只针对微信小程序进行开发，除了**AppID**之外还需要额外配置一下位置权限即可：
 
-![image-20211228041438688](README/src/image-20211228041438688.png)
+![image-20211228041438688](src/image-20211228041438688.png)
 
 其次，我们要将我们的小程序的页面路径添加进`pages.json`文件中，由于使用`HBuilderX`IDE在创建页面文件时，IDE会自动帮我们添加进去。
 
@@ -235,7 +235,7 @@ export default {
 
 这个作为我们的一个放未来24小时天气预报的‘容器’:
 
-![image-20211228051807691](README/src/image-20211228051807691.png)
+![image-20211228051807691](src/image-20211228051807691.png)
 
 首先，我们在这个‘容器’中，再创建一个子组件`<view>`写上我们的标题**未来24小时天气预报**（配置一下样式）：
 
@@ -285,7 +285,7 @@ export default {
 
 这样我们就得到了我们的一个小标题：
 
-![image-20211228052018780](README/src/image-20211228052018780.png)
+![image-20211228052018780](src/image-20211228052018780.png)
 
 然后我们接着创建一个子组件`<view>`存放我们的24小时天气走势图：
 
@@ -377,5 +377,5 @@ export default {
 
 关于**页面的生命周期**，这里引用[微信开放文档 ](https://developers.weixin.qq.com/miniprogram/dev/framework/app-service/page-life-cycle.html)中的图进行说明：
 
-![img](README/src/page-lifecycle.2e646c86.png)
+![img](src/page-lifecycle.2e646c86.png)
 

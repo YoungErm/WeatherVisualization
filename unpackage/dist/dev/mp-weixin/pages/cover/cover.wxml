@@ -1,0 +1,1 @@
+<view><view data-event-opts="{{[['touchstart',[['toIndex',['$event']]]]]}}" class="cover" bindtouchstart="__e"><l-echart class="vue-ref" vue-id="c9d28060-1" data-ref="coverChart1" bind:__l="__l"></l-echart></view></view>

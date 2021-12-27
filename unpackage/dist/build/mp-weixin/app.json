@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/cover/cover",
+    "pages/index/index",
+    "pages/city/city"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTitleText": "天气可视化",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#7dbbfa",
+    "backgroundColor": "#FFFFFF",
+    "backgroundColorBottom": "#f5f5f5"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序天气接口的效果展示"
+    }
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

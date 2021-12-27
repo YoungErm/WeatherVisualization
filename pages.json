@@ -1,0 +1,40 @@
+{
+	"pages": [{
+			"path": "pages/cover/cover",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "天气可视化",
+				"enablePullDownRefresh": true,
+				"backgroundColorBottom":"#f5f5f5"
+			}
+		},
+		{
+			"path": "pages/city/city",
+			"style": {
+				"navigationBarTitleText": "选择城市"
+			}
+		}
+
+	],
+	"globalStyle": {
+		"navigationBarTitleText": "天气可视化",
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#7dbbfa",
+		"backgroundColor": "#FFFFFF",
+		"backgroundColorBottom":"#f5f5f5"
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式（list 的索引项） 表示第一项
+		"list": [{
+			"name": "debug", //模式名称
+			"path": "pages/index/index" //启动页面，必选
+			// "query":  //启动参数，在页面的onLoad函数里面得到。
+		}]
+	}
+}

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "天气可视化",
+  "enablePullDownRefresh": true,
+  "backgroundColorBottom": "#f5f5f5",
+  "usingComponents": {
+    "l-echart": "/uni_modules/lime-echart/components/l-echart/l-echart"
+  }
+}

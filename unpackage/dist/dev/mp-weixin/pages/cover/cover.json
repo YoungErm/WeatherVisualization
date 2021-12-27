@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "l-echart": "/uni_modules/lime-echart/components/l-echart/l-echart"
+  }
+}
