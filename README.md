@@ -13,6 +13,20 @@
 <a><img src="https://img.shields.io/github/stars/YoungErm/WeatherVisualization?style=social" alt="DOI"></a>
 </p>
 
+- [Overview](#overview)
+- [Architecture](#architecture)
+- [Quick tour](#quick-tour)
+- [Online demos](#online-demos)
+- [References](#references)
+- [Appendix](#appendix)
+  * [A.1 Directory structure](#a1-directory-structure)
+  * [A.2 Index.vue](#a2-indexvue)
+    + [template](#template)
+    + [script](#script)
+    + [style](#style)
+  * [A.3 Weather forecast for the next 24 hours](#a3-weather-forecast-for-the-next-24-hours)
+  * [A.4 Others instructions](#a4-others-instructions)
+    + [Page Lifecycle](#page-lifecycle)
 
 
 ##  Overview
@@ -129,14 +143,14 @@ export default {
 </style>
 ```
 
-#### `<template>`
+#### template
 
 - 每个 `.vue` 文件最多包含一个 `<template>` 块。
   - 这块内容专注于做视图UI的处理
 - `<template>` 下有且仅有一个根 `<view>` 组件
   - 以前`html`中的`div`、`p`标签，现在都用`<view>`组件
 
-#### `<script>`
+#### script
 
 - 每个 `.vue` 文件最多包含一个 `<script>` 块。
 
@@ -169,12 +183,12 @@ export default {
         </script>
     ```
 
-#### `<style>`
+#### style
 
 - 一个 `.vue` 文件可以包含多个 `<style>` 标签。
 - 可以简单理解为传统中的`.css`文件
 
-### A.3 Example:  Weather forecast for the next 24 hours
+### A.3 Weather forecast for the next 24 hours
 
 下面我们以**未来24小时天气预报**为例，讲解一下整个项目的思路：
 
